@@ -28,13 +28,14 @@ var app = new Vue(
             }
             
         }, 
-        mounted () {
-            setInterval(()  => {
-                this.indexImages++;
-                if (this.indexImages == this.images.length) {
-                    this.indexImages = 0; 
-                }
-            }, 3000); 
+        mounted: function () {
+            // setInterval(()  => {
+            //     this.indexImages++;
+            //     if (this.indexImages == this.images.length) {
+            //         this.indexImages = 0; 
+            //     }
+            // }, 3000); 
+            setInterval(this.nextImage, 3000)
         }
     }
 )
