@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #slide {
@@ -49,5 +50,22 @@
     font-size: 60px;
     cursor: pointer;
     color: #ee5c24;
+}
+
+#nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#nav i {
+    font-size: 30px;
+    margin: 10px; 
+    cursor: pointer;
+    color: #ee5c24;
+}
+
+#nav i.active {
+    color: white;
 }
 

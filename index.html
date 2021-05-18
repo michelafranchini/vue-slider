@@ -24,6 +24,12 @@
                 <div id="next">
                     <i class="fas fa-chevron-circle-right" @click="nextImage"></i>
                 </div>
+                <!-- navigation con i pallini -->
+                <div id="nav">
+                    <!-- <i class="fas fa-heart"></i>     pieno -->
+                    <!-- <i class="far fa-heart"></i>     vuoto -->
+                    <i v-for="(image, index) in images" class="fa-heart" :class="(indexImages == index) ? 'fas active' : 'far' "></i>
+                </div>
             </div>
         </div>
         <script src="js/script.js"></script>
