@@ -10,7 +10,8 @@ var app = new Vue(
                 "https://xboxplay.games/uploadStream/7818.jpg", 
                 "https://www.gameower.it/wp-content/uploads/2018/04/maxresdefault.jpg"
             ],
-            indexImages: 0 
+            indexImages: 0, 
+            heartIndex: 0
         }, 
         methods:  {
             prevImage: function() {
@@ -24,7 +25,14 @@ var app = new Vue(
                 if (this.indexImages == this.images.length) {
                     this.indexImages = 0; 
                 }
-            }
+            }, 
+            
         }
     }
 )
+
+
+// Bonus:
+// 1) Gestire il cambio dell'immagine al click sui pallini in basso (nav);
+
+// 2) Applicare l' autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente.

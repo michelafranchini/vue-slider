@@ -28,7 +28,7 @@
                 <div id="nav">
                     <!-- <i class="fas fa-heart"></i>     pieno -->
                     <!-- <i class="far fa-heart"></i>     vuoto -->
-                    <i v-for="(image, index) in images" class="fa-heart" :class="(indexImages == index) ? 'fas active' : 'far' "></i>
+                    <i v-for="(image, index) in images" class="fa-heart" :class="(indexImages == index) ? 'fas active' : 'far' " @click="indexImages = index"></i>
                 </div>
             </div>
         </div>
