@@ -25,14 +25,29 @@ var app = new Vue(
                 if (this.indexImages == this.images.length) {
                     this.indexImages = 0; 
                 }
-            }, 
+            }
             
+        }, 
+        mounted () {
+            setInterval(()  => {
+                this.indexImages++;
+                if (this.indexImages == this.images.length) {
+                    this.indexImages = 0; 
+                }
+            }, 3000); 
         }
     }
 )
+
 
 
 // Bonus:
 // 1) Gestire il cambio dell'immagine al click sui pallini in basso (nav);
 
 // 2) Applicare l' autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente.
+
+// setInterval (nomeFunzione, tempoPerOgniRipetizione);  
+// “Ti faccio apparire questo OGNI 10 secondi”
+
+// Per terminate la setInterval mi serve la clearInterval(nomeVariabileSetInterval).
+// Salviamo in una variabile il risultato della setInterval.
